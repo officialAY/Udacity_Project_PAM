@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pixel Art Maker!</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Broadway">
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+</head>
+    <body>
+        <!--Classes were implemented to help style the heading individually in CSS-->
+        <h1> Lab:
+            <use class="one">Pixel</use>
+            <use class="two">Art</use>
+            <use class="three">Maker</use>
+        </h1>
+
+        <!--Banner inclusion to show sample of Art Maker-->
+        <div>
+        <img src="sample.png" alt="Pixel Art Maker" style="width:320px;height:240px;">
+        <br>
+        <br>
+
+        <!--Create a form to accept input from user-->
+        <h2>Choose Grid Size</h2>
+        <br>
+
+        <form id="sizePicker">
+            Grid Height:
+            <input type="number" id="inputHeight" name="height" min="1" value="">  
+            Grid Width:
+            <input type="number" id="inputWeight" name="width" min="1" value="">
+            <input type="submit">
+        </form>
+        <!--Form Ends-->
+
+        <!--Color selection codePicker starts-->
+        <h2>Pick A Color</h2>
+        <input type="color" id="colorPicker">
+        <!--Color selection codePicker ends-->
+
+        <!--Canvas code to implement grids starts and implementation of jquery for grid responsiveness-->
+        <h2>Design Canvas</h2>
+        <table id="pixelCanvas"></table>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <script src="designs.js"></script>
+        <!--Canvas code to implement grids ends-->
+
+    </body>
+</html>
